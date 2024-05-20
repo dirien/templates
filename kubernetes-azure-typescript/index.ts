@@ -91,6 +91,10 @@ const managedCluster = new containerservice.ManagedCluster("managedCluster", {
         serviceCidr: "10.96.0.0/16",
         dnsServiceIP: "10.96.0.10",
     },
+    sku: {
+        name: "Base",
+        tier: "Standard",
+    },
     resourceGroupName: resourceGroup.name,
 });
 
